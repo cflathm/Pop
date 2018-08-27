@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spawn_Script : MonoBehaviour {
 	public int balloonMax = 100;
+	public List<Sprite> balloonSprites;
     public GameObject balloon;
 	private List<GameObject> balloonPool;
     // Use this for initialization
@@ -12,6 +13,7 @@ public class Spawn_Script : MonoBehaviour {
 		for(int i = 0; i < balloonMax; i++){
 			GameObject temp = (GameObject)Instantiate(balloon);
 			temp.SetActive(false);
+			temp.GetComponent<SpriteRenderer>().sprite = balloonSprites[Random.Range(0,balloonSprites.Capacity)];
 			balloonPool.Add(temp);
 		}
 		InvokeRepeating("SpawnBalloon", 2.0f, 0.1f);

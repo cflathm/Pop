@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4209112144083680}
   - component: {fileID: 212481564670319324}
   - component: {fileID: 50514055609148294}
-  - component: {fileID: 61815744398889712}
-  m_Layer: 0
+  - component: {fileID: 58619528851945854}
+  m_Layer: 5
   m_Name: Balloon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1967513384130118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.72, y: -2.28, z: 0}
+  m_LocalPosition: {x: -8.461, y: -2.904, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -62,8 +62,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &61815744398889712
-BoxCollider2D:
+--- !u!58 &58619528851945854
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -74,19 +74,9 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 3, y: 3}
-    newSize: {x: 3, y: 3}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
+  m_Offset: {x: 0, y: 0.13882256}
   serializedVersion: 2
-  m_Size: {x: 3, y: 3}
-  m_EdgeRadius: 0
+  m_Radius: 1.0557384
 --- !u!212 &212481564670319324
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -122,7 +112,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9f4fd1ccf4cc1644aad7fb6b4d7dba20, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 06d80b6aa78780b4b9403e20363161a7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
