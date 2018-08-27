@@ -41,3 +41,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 2247481647
+    locked: 0
+  - name: Balloon
+    uniqueID: 2032599119
+    locked: 0

@@ -12,8 +12,10 @@ public class BalloonPop : MonoBehaviour {
 			Vector3 pos = Camera.main.ScreenToWorldPoint (new Vector3(touch.position.x, touch.position.y, 0));
 			RaycastHit2D hit = Physics2D.Raycast(pos,Vector2.zero);
 			if (hit)
-				if(touch.phase == TouchPhase.Began)
+				if(touch.phase == TouchPhase.Began){
+					this.GetComponent<AudioSource>().Play();
 					hit.collider.gameObject.SetActive(false);
+				}
 		}
 	}
 }
