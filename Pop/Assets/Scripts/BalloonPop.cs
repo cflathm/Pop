@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BalloonPop : MonoBehaviour {
-
 	// Update is called once per frame
 	void Update () {
 		for (int i = 0; i < Input.touchCount; i++){
@@ -15,6 +15,7 @@ public class BalloonPop : MonoBehaviour {
 				if(touch.phase == TouchPhase.Began){
 					this.GetComponent<AudioSource>().Play();
 					hit.collider.gameObject.SetActive(false);
+					PlayerPrefs.SetInt("score",PlayerPrefs.GetInt("score")+1);
 				}
 		}
 	}

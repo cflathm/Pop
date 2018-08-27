@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawn_Script : MonoBehaviour {
+public class SpawnScript : MonoBehaviour {
 	public int balloonMax = 100;
 	public List<Sprite> balloonSprites;
     public GameObject balloon;
