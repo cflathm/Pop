@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 2247481647
     locked: 0
+  - name: Cloud
+    uniqueID: 778222499
+    locked: 0
   - name: Balloon
     uniqueID: 2032599119
     locked: 0
